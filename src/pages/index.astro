@@ -1,17 +1,21 @@
 ---
-
+import Layout  from '../components/Layout.astro';
+import Nav     from '../components/Nav.astro';
+import Hero    from '../components/Hero.astro';
+import Values  from '../components/Values.astro';
+import About   from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import Footer  from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+  title="Mikey Bruun · Nova Tech"
+  description="Software konsulent i Aarhus. Jeg arbejder med mennesker der bygger software — som leder, coach eller sparringspartner."
+>
+  <Nav />
+  <Hero />
+  <Values />
+  <About />
+  <Contact />
+  <Footer />
+</Layout>

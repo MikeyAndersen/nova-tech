@@ -1,0 +1,36 @@
+---
+// id="kontakt" — target for "Kontakt" nav anchor and hero CTA
+//
+// Form backend: this is a static site, so you need a third-party handler.
+// Recommended: create a free form at formspree.io and replace action="#"
+// with your endpoint, e.g. action="https://formspree.io/f/YOUR_ID"
+---
+
+<section id="kontakt" class="contact">
+  <div class="container">
+    <h2 class="contact__heading">Lad os tage en snak</h2>
+
+    <form class="form" method="POST" action="#">
+      <div class="form__row">
+        <div class="form__field">
+          <label class="form__label" for="navn">Navn</label>
+          <input class="form__input" id="navn" name="navn" type="text" required autocomplete="name" />
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="besked">Besked</label>
+        <textarea class="form__textarea" id="besked" name="besked" required></textarea>
+      </div>
+      <button class="form__submit" type="submit">Send</button>
+    </form>
+
+    <p class="form__note">
+      Eller skriv direkte til <a href="mailto:mba@nova-tech.dk">mba@nova-tech.dk</a>
+    </p>
+    <p class="form__note">Jeg svarer typisk inden for et par dage.</p>
+  </div>
+</section>
