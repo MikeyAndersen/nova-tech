@@ -250,6 +250,7 @@ a { color: inherit; text-decoration: none; }
 
 .about__linkedin {
   font-size: 0.9375rem;
+  font-weight: 600;
   color: var(--color-solar);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -353,6 +354,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .form__note a {
+  font-weight: 600;
   color: var(--color-solar);
   text-decoration: underline;
   text-underline-offset: 2px;
