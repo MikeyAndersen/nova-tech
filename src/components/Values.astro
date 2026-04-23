@@ -1,19 +1,19 @@
 ---
-const values = [
-  'Jeg tror på at udvikle mennesker, ikke bare systemer',
-  'Jeg starter altid med at forstå din situation — ikke med at sælge dig noget',
+const cards = [
+  'Jeg tror på at udvikle mennesker, ikke bare systemer.',
+  'Jeg starter altid med at forstå din situation — ikke med at sælge dig noget.',
 ];
 ---
 
 <section class="values">
   <div class="container">
-    <ul class="values__list">
-      {values.map(v => (
-        <li class="values__item">
-          <span class="values__dot" aria-hidden="true"></span>
-          <span>{v}</span>
-        </li>
+    <div class="values__grid">
+      {cards.map(text => (
+        <div class="values__card">
+          <span class="values__quote" aria-hidden="true">"</span>
+          <p>{text}</p>
+        </div>
       ))}
-    </ul>
+    </div>
   </div>
 </section>
